@@ -7,6 +7,10 @@ Makes Flashcards/Quiz automatically from pptx file.
 # FOR MARKNG Purposes:
 Only files that need to be conisdered are:
 1. main_code.py
+2. Chapter-18-Lecture-Notes-8th-Edition_Testing.pptx
+3. pip installing python-pptx
+4. pip installing numpy
+
 
 ## Main Project (main_code.py):
 ### All Requirements for Main Project:
@@ -15,7 +19,7 @@ Only files that need to be conisdered are:
 3. re library
 4. numpy library
 
-### All requirements for whole project (main_gui and main_code.py):
+### All requirements for whole project (main_gui and main_code.py) (requirements.txt):
 1. certifi==2019.11.28
 2. chardet==3.0.4
 3. docutils==0.15.2
