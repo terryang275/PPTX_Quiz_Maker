@@ -38,23 +38,54 @@ XlsxWriter==1.2.6
 ### Feature 1:
 #### 1. Uploading Files:
 #### Requirements
+Uses pptx library to extract objects in powerpoint so we can later find the text and make flashcards.
 
 #### 2. Extracting Highlighted text with <@ and @>:
 #### Requirements
+Text must be enclosed with <@ and @>.
+Example: <@ Sample text in here will be isolated and random words in here will be ommited@>
+Random text, but not in a list of common words.
 
 #### 3. Extracting Highlighted text with <! and !>:
 #### Requirements
+Text must be enclosed with <! and !> and within <@ and @>
+Example: <@ This is sample text <! text between this will be specifically blanked!>, if text is the text has partial markers like <! but no closing, then text will randomly be blocked rather than specifically blocked @>
 
 #### 4. Error Checking:
 #### Requirements
+Will state which slide has the error if a <@ or @> is missing its other compliment
 
 #### 5. QUIZ/FLashcard:
 #### Requirements
+a dictionary of the flashcard properties
+example
+flashcard = {Question #1: ["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order]
+             Question #2 :["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order] ...
+             }
+
+by taking this dictionary in, we quiz the user using Altered text, we then later match the append their answer to the dictionary for the corresponding question.
+
+flashcard = {Question #1: ["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order],[User response],
+             Question #2 :["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order],[User response], ...
+             }
+We have added a SKIP option so that users can skip a question they found easy or too hard. Either circumstance, the user will recieve ZERO for any REMAINING blanks within the question.
 
 #### 6. Validation and Report:
 #### Requirements
+flashcard = {Question #1: ["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order],[User response],
+             Question #2 :["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order],[User response], ...
+             }
+for this process, we need the [words ommitted in sequenctial order],[User response] for each question so we can match and see how many equal each other.
+
+We also append the score back to each question. Example: appending [0,1,0,1,1] where each element represents the score for the blank
 
 
 ## Side Project (main_gui.py):
 #### 1. Uploading Files:
 #### Requirements
+1. A graphics card is needed to display GUI
+2. Kivy has instruction on how to download and all dependencies required https://kivy.org/#home 
+3. KivyMD (Kivy Material Design), simple pip install kivymd, and it an sister project of Kivy
+4. .KV file (Apparently it is similar to CSS, but I haven't tried CSS before). The KV file allows editing and layout of application to be easier, instead of setting up code in python file. 
+
+Picture sample and code will be included. If we had more time, we would have integrated our code into the GUI. For now, the GUI is a demonstration of what we would have done. 
