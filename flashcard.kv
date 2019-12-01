@@ -1,0 +1,73 @@
+#:kivy 1.0
+
+NavigationLayout:
+    MDNavigationDrawer:
+        drawer_logo: "desk-office.jpeg"
+        NavigationDrawerSubheader:
+            text:"Manage Decks"
+        NavigationDrawerIconButton:
+            icon: "book-plus"
+            text: "Add Deck"
+            on_release:
+                WindowManager.current ="Add Deck"
+        NavigationDrawerIconButton:
+            icon: "book-minus"
+            text: "Delete Deck"
+            on_release:
+                WindowManager.current ="Delete Deck"
+        NavigationDrawerSubheader:
+            text:"Learn and Review"
+        NavigationDrawerIconButton:
+            icon: "book-multiple"
+            text: "Decks"
+            on_release:
+                WindowManager.current ="Decks"
+        NavigationDrawerSubheader:
+            text:"Reports"
+        NavigationDrawerIconButton:
+            icon: "book-open-page-variant"
+            text: "Reports"
+            on_release:
+                WindowManager.current ="Reports"
+        NavigationDrawerSubheader:
+            text:"About Us"
+        NavigationDrawerIconButton:
+            icon: "account"
+            text: "Our Team"
+            on_release:
+                WindowManager.current ="Our Team"
+        NavigationDrawerIconButton:
+            icon: "account"
+            text: "Main Page"
+            on_release:
+                WindowManager.current ="Main Page"
+    BoxLayout:
+        orientation: "vertical"
+        ScreenManager:
+            id: WindowManager
+            Screen:
+                name: "Main Page"
+                BoxLayout:
+                    orientation: "vertical"
+            Screen:
+                name:"Add Deck"
+                MDLabel:
+                    text: "Add Deck"
+            Screen:
+                name: "Delete Deck"
+                MDLabel:
+                    text: "Delete Deck"               
+            Screen:
+                name: "Decks"
+                MDLabel:
+                    text:"Decks"
+            Screen:
+                name: "Reports"
+                MDLabel:
+                    text: "Reports"  
+            Screen:
+                name: "Our Team"
+                MDLabel:
+                    text: "Our Team"
+
+<Main Page>
