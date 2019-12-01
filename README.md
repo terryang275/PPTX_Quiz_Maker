@@ -59,22 +59,28 @@ Will state which slide has the error if a <@ or @> is missing its other complime
 #### Requirements
 a dictionary of the flashcard properties
 example
+
 flashcard = {Question #1: ["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order]
              Question #2 :["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order] ...
              }
 
+
 by taking this dictionary in, we quiz the user using Altered text, we then later match the append their answer to the dictionary for the corresponding question.
+
 
 flashcard = {Question #1: ["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order],[User response],
              Question #2 :["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order],[User response], ...
              }
+             
 We have added a SKIP option so that users can skip a question they found easy or too hard. Either circumstance, the user will recieve ZERO for any REMAINING blanks within the question.
 
 #### 6. Validation and Report:
 #### Requirements
+
 flashcard = {Question #1: ["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order],[User response],
              Question #2 :["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order],[User response], ...
              }
+             
 for this process, we need the [words ommitted in sequenctial order],[User response] for each question so we can match and see how many equal each other.
 
 We also append the score back to each question. Example: appending [0,1,0,1,1] where each element represents the score for the blank
