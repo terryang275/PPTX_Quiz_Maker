@@ -4,6 +4,10 @@ Makes Flashcards/Quiz automatically from pptx file.
 ## Description:
   This project will create fill in the blank flashcard questions using powerpoints that the user provides. The program will allow the user to either choose certain words to omit from the text (and thus create a blank), or randomize the word(s) that will be omitted on each side. The user will be quizzed and will need to answer the created questions. After answering the questions, a report will be generated which will display and compare the answers to the solutions and provide a final mark. Common words, such as the, it, there, etc, will be not be chosen for omission, as programmed into the system. The user can also add additional common words in the code as they please. This program is useful for studying as they are able to identify important points in their powerpoints and be quizzed on them.
 
+# FOR MARKNG Purposes:
+Only files that need to be conisdered are:
+1. main_code.py
+
 ## Main Project (main_code.py):
 ### All Requirements for Main Project:
 1. python-pptx library 
