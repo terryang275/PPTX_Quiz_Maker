@@ -12,27 +12,27 @@ Makes Flashcards/Quiz automatically from pptx file.
 4. numpy library
 
 ### All requirements for whole project (main_gui and main_code.py):
-certifi==2019.11.28
-chardet==3.0.4
-docutils==0.15.2
-idna==2.8
-Kivy==1.11.1
-kivy-deps.angle==0.1.9
-kivy-deps.glew==0.1.12
-kivy-deps.gstreamer==0.1.17
-kivy-deps.sdl2==0.1.22
-Kivy-Garden==0.1.4
-kivymd==0.102.0
-lxml==4.4.2
-numpy==1.17.4
-Pillow==6.2.1
-Pygments==2.5.2
-pypiwin32==223
-python-pptx==0.6.18
-pywin32==227
-requests==2.22.0
-urllib3==1.25.7
-XlsxWriter==1.2.6
+1. certifi==2019.11.28
+2. chardet==3.0.4
+3. docutils==0.15.2
+4. idna==2.8
+5. Kivy==1.11.1
+6. kivy-deps.angle==0.1.9
+7. kivy-deps.glew==0.1.12
+8. kivy-deps.gstreamer==0.1.17
+9. kivy-deps.sdl2==0.1.22
+10. Kivy-Garden==0.1.4
+11. kivymd==0.102.0
+12. lxml==4.4.2
+13. numpy==1.17.4
+14. Pillow==6.2.1
+15. Pygments==2.5.2
+16. pypiwin32==223
+17. python-pptx==0.6.18
+18. pywin32==227
+19. requests==2.22.0
+20. urllib3==1.25.7
+21. XlsxWriter==1.2.6
 
 
 ### Feature 1:
@@ -60,8 +60,8 @@ Will state which slide has the error if a <@ or @> is missing its other complime
 a dictionary of the flashcard properties
 example
 
-flashcard = {Question #1: ["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order]
-             Question #2 :["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order] ...
+flashcard = {Question #1: ["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order],
+             Question #2 :["Original text,"Altered/Blanked Text",[words ommitted in sequenctial order], ...
              }
 
 
