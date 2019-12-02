@@ -12,14 +12,14 @@ Only files that need to be conisdered are:
 4. pip installing numpy
 
 
-## Main Project (main_code.py):
+## Main Project (main_code_Final.py):
 ### All Requirements for Main Project:
 1. python-pptx library 
 2. random library
 3. re library
 4. numpy library
 
-### All requirements for whole project (main_gui and main_code.py) (requirements.txt):
+### All requirements for whole project (main_gui.py and main_code_Final.py) (requirements.txt):
 1. certifi==2019.11.28
 2. chardet==3.0.4
 3. docutils==0.15.2
@@ -47,6 +47,7 @@ Only files that need to be conisdered are:
 #### 1. Uploading Files:
 #### Requirements
 Uses pptx library to extract objects in powerpoint so we can later find the text and make flashcards.
+File must be a pptx file
 
 #### 2. Extracting Highlighted text with <@ and @>:
 #### Requirements
